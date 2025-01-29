@@ -1,0 +1,39 @@
+/* styles.css */
+.metrics-box {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #F4F4F9;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.metrics-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.metrics-box .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.metrics-box .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.metrics-box .value {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+}
+
+.separator {
+    border-right: 2px solid #ddd;
+    height: 100px;
+    margin-top: 10px;
+}

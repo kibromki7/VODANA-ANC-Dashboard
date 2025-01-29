@@ -1,0 +1,268 @@
+/* Logo container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logo-container img {
+    width: 180px;
+    height: auto;
+}
+
+/* Background and text styling */
+.stApp {
+    background-color: white; 
+    color: #333333; /* Darker text color */
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #F0F2F6; /* Dark green sidebar */
+    color: gold;
+}
+[data-testid="stSidebar"] .stButton > button {
+    color: white !important;
+    background-color: #2a9d8f; /* Teal buttons */
+    border-radius: 5px;
+}
+/* Change color of checkbox labels in the sidebar */
+.stSidebar .stCheckbox > label {
+    color: white !important;  /* Red color for checkbox labels */
+    font-size: 16px !important;  /* Font size for readability */
+}
+
+/* Sidebar success messages */
+[data-testid="stSidebar"] .stAlert {
+    background-color: #e9c46a; /* Yellow alert background */
+    color: #333333; /* Darker text */
+    border-radius: 5px;
+}
+
+/* Title styling */
+.stTitle {
+    color: #2a9d8f; /* Teal title color */
+}
+
+/* Metric cards alignment */
+.metric-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+/* Zoom-in effect for metrics on hover */
+
+/* Button hover effect */
+/*button:hover {
+    background-color: #e76f51 !important; 
+}
+*/
+/* Zoom-in effect for buttons on hover */
+button:hover {
+    background-color: #e76f51 !important; /* Red-orange hover effect */
+    transform: scale(1.1); /* Slight zoom-in effect */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+/* styles.css */
+/*.metrics-box {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #F4F4F9;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.metrics-box .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.metrics-box .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.metrics-box .value {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+}
+
+.separator {
+    border-right: 2px solid #ddd;
+    height: 100px;
+    margin-top: 10px;
+}
+*/
+
+
+/* Updated metrics-box for horizontal layout */
+/* Updated metrics-box for text on the left and icon on the right */
+.metrics-box {
+    display: flex;
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center; /* Vertically align items */
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #F4F4F9;
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: left; /* Align text to the left */
+    /*width: 200px;*/ 
+    height: 180px; 
+}
+
+.metrics-box .text-container {
+    flex: 1; /* Take up remaining space on the left */
+}
+
+.metrics-box .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #333;
+    margin-bottom: 5px; /* Spacing between title and value */
+}
+
+.metrics-box .value {
+    font-size: 42px; /* Bigger font size for the value */
+    font-weight: bold;
+    color: #222;
+    text-align: center; /* Center value text */
+}
+.metrics-box .icon {
+    font-size: 70px; /* Size of the icon */
+    color: #4CAF50;
+    margin-left: 15px; /* Add spacing from the text */
+}
+
+.metrics-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); /* Slight zoom-in effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/* Center-align the login container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: powderblue; /* Light blue background */
+}
+
+/* Style the login box */
+.login-box {
+    background-color: #ffffff; /* White background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Form group styling for username and password */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style input fields */
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style the login button */
+.btn-primary {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Custom Header */
+.header-container {
+    background-color: #1f4e79;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+.header-description {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+
+ /* Custom Footer */
+ footer {
+    visibility: hidden;
+}
+.custom-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+/* Sidebar logged-in container styling */
+.logged-in-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Add space between text and button */
+    margin-bottom: 20px; /* Optional: adjust spacing below */
+}
+
+/* Style for the logged-in text */
+.logged-in-text {
+    background-color: #e9c46a;
+    font-size: 18px;
+    color: #333; /* Adjust text color if needed */
+    margin-right: 10px; /* Space between text and button */
+}
+
+/* Style for the logout button */
+.logout-button {
+    color: white !important;
+    background-color: #2a9d8f; /* Teal background */
+    border-radius: 5px;
+    padding: 5px 10px; /* Adjust padding for better alignment */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.logout-button:hover {
+    background-color: #e76f51 !important; /* Red-orange hover effect */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
